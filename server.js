@@ -16,7 +16,7 @@ const db = knex({
         host: 'dpg-cidajatph6eoun9tsfc0-a.frankfurt-postgres.render.com',
         user: 'smart_brain_ekcd_user',
         password: 'TE33L78OaDDdNA6nLgWkGWLHYweM3ReV',
-        database: 'smart_brain'
+        database: 'smart_brain_ekcd'
     }
 });
 
