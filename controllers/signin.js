@@ -18,7 +18,10 @@ const handleSignIn = (db, bcrypt) => (req, res) => {
                 res.status(400).json('Wrong credentials')
             }
         })
-        .catch(err => res.status(400).json('Wrong credentials'))
+        .catch(err =>{
+            console.log(err);
+            res.status(400).json('Wrong credentials')
+        } )
 }
 module.exports = {
     handleSignIn
