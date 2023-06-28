@@ -15,10 +15,14 @@ const db = knex({
     connection: {
         host: 'dpg-cidajatph6eoun9tsfc0-a.frankfurt-postgres.render.com',
         user: 'smart_brain_ekcd_user',
+        database: 'smart_brain_ekcd',
         password: 'TE33L78OaDDdNA6nLgWkGWLHYweM3ReV',
-        database: 'smart_brain_ekcd'
-    }
+        ssl: true
+    },
+    debug: true
 });
+
+console.log(process.env.DATABASE_URL);
 
 app.use(bodyParser.json());
 app.use(cors());

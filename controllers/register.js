@@ -25,7 +25,11 @@ const handleRegister = (db, bcrypt) => (req, res) => {
             .then(trx.commit)
             .catch(trx.rollback)
     })
-        .catch(err => res.status(400).json("Unable to join"))
+        .catch(err => {
+            // Those two errs do not have the same output. The first one has more info
+            console.log(err)
+            res.status(400).json(JSON.stringify(err))
+        })
 }
 
 module.exports = {
