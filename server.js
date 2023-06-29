@@ -21,7 +21,7 @@ const db = knex({
         connectionTimeoutMillis: 0,
         ssl: true
     },
-    debug: true
+    pool: { min: 0, max: 7 }
 });
 
 console.log(process.env.DATABASE_URL);
