@@ -17,6 +17,8 @@ const db = knex({
         user: 'smart_brain_ekcd_user',
         database: 'smart_brain_ekcd',
         password: 'TE33L78OaDDdNA6nLgWkGWLHYweM3ReV',
+        idleTimeoutMillis: 0,
+        connectionTimeoutMillis: 0,
         ssl: true
     },
     debug: true
