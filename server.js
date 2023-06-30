@@ -24,7 +24,7 @@ const db = knex({
         min: 0,
         max: 7,
         idleTimeoutMillis: 30000,
-        connectionTimeoutMillis: 30000,}
+        connectionTimeoutMillis: 30000}
 });
 
 app.use(bodyParser.json());
