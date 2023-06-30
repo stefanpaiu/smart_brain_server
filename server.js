@@ -17,14 +17,15 @@ const db = knex({
         user: 'smart_brain_ekcd_user',
         database: 'smart_brain_ekcd',
         password: 'TE33L78OaDDdNA6nLgWkGWLHYweM3ReV',
-        idleTimeoutMillis: 0,
-        connectionTimeoutMillis: 0,
+
         ssl: true
     },
-    pool: { min: 0, max: 7 }
+    pool: {
+        min: 0,
+        max: 7,
+        idleTimeoutMillis: 30000,
+        connectionTimeoutMillis: 30000,}
 });
-
-console.log(process.env.DATABASE_URL);
 
 app.use(bodyParser.json());
 app.use(cors());
