@@ -16,9 +16,7 @@ const db = knex({
         host: 'dpg-cidajatph6eoun9tsfc0-a',
         user: 'smart_brain_ekcd_user',
         database: 'smart_brain_ekcd',
-        password: 'TE33L78OaDDdNA6nLgWkGWLHYweM3ReV',
-
-        ssl: true
+        password: 'TE33L78OaDDdNA6nLgWkGWLHYweM3ReV'
     },
     pool: {
         min: 0,
