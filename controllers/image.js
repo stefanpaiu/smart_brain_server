@@ -19,7 +19,7 @@ const handleApiCall = (req, res) => {
         method: "POST",
         headers: {
             Accept: "application/json",
-            Authorization: "Key " + "0a8a23cc62a54f75a8021375162c7b68",
+            Authorization: "Key " + process.env.API_CLARIFY
         },
         body: raw,
     };
